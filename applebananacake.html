@@ -1,0 +1,32 @@
+<html>
+<body>
+
+<font color=orange>Let's make a </font><font color=gold><font size=30><b>cake!</b></font><br><br>
+
+<input type="text" id="apple"> + <input type="text" id="banana">
+
+<button type="button" id="ingredients">
+ingredients
+</button>
+
+<span id="cake">
+</span>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+$("#ingredients").click(function(){
+var a = $("#apple").val(); 
+var b = $("#banana").val();
+var c = a + b;
+
+$("#cake").text(c)
+
+})
+</script>
+<font color=gold><font size=44>cake</font>
+<br>
+<br>
+<font color=orange>Eat your coded cake and be <b>happy</b>!</font>
+</body>
+
+</html>
